@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# Don't be lazy. Name your files.
+[Cc]lass1.cs
+
 # dotenv files
 .env
 

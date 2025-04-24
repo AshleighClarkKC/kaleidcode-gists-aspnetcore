@@ -55,6 +55,7 @@ public abstract class BaseRepository<TEntity, TContext>(TContext context) : IBas
     {
         Context.Set<TEntity>().Update(entity);
         TrackChanges(entity);
+        Context.SaveChanges();
     }
 
     public virtual async Task UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
@@ -90,6 +91,7 @@ public abstract class BaseRepository<TEntity, TContext>(TContext context) : IBas
     {
         Context.Set<TEntity>().Remove(entity);
         TrackChanges(entity);
+        Context.SaveChanges();
     }
 
     public virtual async Task RemoveAsync(TEntity entity, CancellationToken cancellationToken = default)

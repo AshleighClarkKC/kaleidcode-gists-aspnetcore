@@ -10,4 +10,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\data\Kaleidocode.Gists.ChangeTracking.Data.csproj" />
+    <ProjectReference Include="..\models\Kaleidocode.Gists.ChangeTracking.Models.csproj" />
+    <ProjectReference Include="..\repositories\Kaleidocode.Gists.ChangeTracking.Repositories.csproj" />
+    <ProjectReference Include="..\shared\Kaleidocode.Gists.ChangeTracking.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
